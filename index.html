@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using Grid </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+<div class="calculator">
+    <div class= "formstyle">
+        <form name= "rform">
+            <input class= "textview" name= "textview">
+        </form>
+      
+        <!-- Buttons -->
+        <div class="calcbtns">
+            <!-- Row 1 -->
+            <button class="calcbtn is-clear" value="C" onclick = "rform.textview.value = ' '">C</button>
+            <button class="calcbtn"  value ="DEL" onclick="backspace()">DEL</button>
+
+            <!-- Row 2 -->
+            <button class="calcbtn" value ="7" onclick="insert('7')">7</button>
+            <button class="calcbtn" value ="8" onclick="insert('8')">8</button>
+            <button class="calcbtn" value ="9" onclick="insert('9')">9</button>
+            <button class="calcbtn"  value ="/" onclick="insert('/')">&divide;</button>
+
+            <!-- Row 3 -->
+            <button class="calcbtn" value ="4" onclick="insert('4')">4</button>
+            <button class="calcbtn" value ="5" onclick="insert('5')">5</button>
+            <button class="calcbtn" value ="6" onclick="insert('6')">6</button>
+            <button class="calcbtn" value ="*" onclick="insert('*')">&times;</button>
+
+            <!-- Row 4 -->
+            <button class="calcbtn" value ="1" onclick="insert('1')">1</button>
+            <button class="calcbtn" value ="2" onclick="insert('2')">2</button>
+            <button class="calcbtn" value ="3" onclick="insert('3')">3</button>
+            <button class="calcbtn" value ="-" onclick="insert('-')">&minus;</button>
+
+            <!-- Row 5 -->
+            <button class="calcbtn is-zero" value ="0" onclick="insert('0')">0</button>
+            <button class="calcbtn" value ="+" onclick="insert('+')">&plus;</button>
+
+            <!-- Row 6 -->
+            <button class="calcbtn" value ="sin" onclick="sin()">sin</button>
+            <button class="calcbtn" value ="cos" onclick="cos()">cos</button>
+            <button class="calcbtn" value ="tan" onclick="tan()">tan</button>
+            <button class="calcbtn is-equals" value="=" onclick="equal('=')">&equals;</button>
+        </div>
+    </div> 
+</div>
+</body>
+</html>

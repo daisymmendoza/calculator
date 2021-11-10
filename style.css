@@ -1,0 +1,105 @@
+/* Imported font style */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Font style */
+.calculator input,
+.calcbtn {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Calculator box */
+* {
+    box-sizing: border-box;
+}
+  
+/* Body */
+body {
+    background: #636f85;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+  
+/* Limit width and center */
+.calculator .formstyle {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 5px;
+    border-radius: 5px;
+    background: #bed6e0;
+}
+
+/* Buttons */
+.calcbtn {
+    background: #7689a5; /* light background with opacity 50% */
+    border: 1px; /* black border */
+    padding: 20px;
+    color: #EEE; /* white text */
+    border-radius: 5px; /* rounded corners */
+    font-size: 22px; /* larger fonts */
+    cursor: pointer; /* make it look clickable */
+}
+
+/* Input area */
+.calculator input {
+    /* Reset basic form styles */
+    background: #adb8c9;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 2px solid #adb8c9;
+    color: white;
+    text-align: right;
+    font-size: 40px;
+    border-radius: 0;
+}
+
+/* Buttons (padding and grid) */
+.calcbtns {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+/* Zero and clear buttons (grid) */
+.is-zero,
+.is-clear   {
+    grid-column: span 3;
+}
+
+/* Clear button color */
+.is-clear   {
+    background: #4d6ea5;
+}
+
+/* Equal button color */
+.is-equals {
+    background: #4d6ea5;
+}
+
+/* Input area text */
+.textview{
+    width: 400px;
+    font-size: 25px;
+    padding: 5px;
+}
+
+/* Buttons color when hovering */
+.calcbtn:hover {
+    background-color: #667a97;
+    color: white;
+}
+
+/* Clear button color when hovering */
+.is-clear:hover {
+    background-color: rgb(68, 95, 143);
+    color: white;
+}
+
+/* Equal button color when hovering */
+.is-equals:hover {
+    background-color: rgb(68, 95, 143);
+    color: white;
+}
